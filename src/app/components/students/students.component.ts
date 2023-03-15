@@ -10,8 +10,14 @@ export class StudentsComponent {
 
   students;
 
-  constructor() {
-    const service = new StudentService();
+  // constructor() {
+  //   // dependancy injection
+  //   const service = new StudentService();
+  //   this.students = service.students;
+  // }
+  // itis preferred to be written as follows: 
+  constructor(private service:StudentService) {
+
     this.students = service.students;
   }
 
