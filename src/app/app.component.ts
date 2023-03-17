@@ -8,4 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my first angular app';
   name = 'Moneer';
+  imageUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ74VClRl6IRXdfl_8JnEFf3Q19tQB19SKtmA&usqp=CAU';
+  url = 'https://youtube.ca';
+  numColumnCollapse = 2;
+  cssClass = 'border green';
+  bgColor = 'orange';
+
+  onSubmit() {
+    alert('I just got clicked')
+  }
 }

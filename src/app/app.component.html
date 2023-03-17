@@ -1,10 +1,39 @@
+<!-- one way data binding -->
+
+<!-- String interpolation -->
 <h1>Hello World</h1>
 {{ title }}
 <h2>{{ name }}</h2>
 
 <app-students></app-students>
 <app-teachers></app-teachers>
-<!-- Angular Component -->
-<!-- CSS -->
-<!-- HTML -->
-<!-- TS -->
+
+<!-- Property binding -->
+<img [src]="imageUrl" alt="">
+<a [href]="url">Youtube</a>
+<br>
+<!-- Event binding -->
+<button type="button"(click)="onSubmit()">Click me</button>
+<br> <br>
+
+<!-- Attribute binding -->
+<table>
+  <tr>
+    <td>1</td>
+    <!-- we need to prefix the attribute with attr. for attribute binding -->
+    <td [attr.colspan]="numColumnCollapse">2</td>
+    <!-- <td>3</td> -->
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+  </tr>
+</table>
+<br>
+
+<!-- Class binding -->
+<div [class]="cssClass">Hello from the other side</div> 
+
+<!-- Style binding -->
+<div [style.background-color] = "bgColor">Hello again from out there</div>
