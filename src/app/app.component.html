@@ -40,3 +40,26 @@
 
 <!-- Two way data binding [(ngModel)]="variable" -->
 <input [(ngModel)]="name"> {{ name }}
+
+<!-- Directives -->
+<!-- ngClass Directive -->
+<div [ngClass]="{'border': false, 'blue': showBlueColor, 'green': !showBlueColor}">Another div</div>
+
+<button type="button" (click)="showBlueColor = true">Show blue</button>
+<button type="button" (click)="showBlueColor = false">Show green</button>
+
+<!-- ngStyle Directive -->
+<div [ngStyle]="{'background-color': bgColor, 'color': 'red'}">Yet another div</div>
+
+<!-- ngFor Directive --used for looping in HTML-->
+<ul>
+  <li *ngFor="let studentName of names">{{ studentName }}</li>  
+</ul>
+
+<!-- ngIf Directive --used for conditionals in HTML -->
+<!-- if -->
+<!-- <div *ngIf="showBlueColor ">Show this text</div> -->
+
+<!-- if else -->
+<div *ngIf="showBlueColor; else elseContainer ">Show blue</div>
+<ng-template #elseContainer>Show green</ng-template>

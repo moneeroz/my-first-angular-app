@@ -13,6 +13,8 @@ export class AppComponent {
   numColumnCollapse = 2;
   cssClass = 'border green';
   bgColor = 'orange';
+  showBlueColor = true;
+  names = ['Moneer', 'Carlos', 'Pete', 'Moose'];
 
   onSubmit() {
     alert('I just got clicked')
