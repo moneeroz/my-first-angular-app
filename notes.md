@@ -43,5 +43,6 @@
 - a directive is used to extend HTML -> makes HTML Dynamic?
   - ngClass Directive
   - ngStyle Directive
+  - ngIf Directive
  #### Notes
  - Hot reload: auto-update of the browser
